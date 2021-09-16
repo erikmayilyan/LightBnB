@@ -1,0 +1,1 @@
+SELECT property_reviews.id AS id, properties.title AS title, properties.cost_per_night AS cost_per_night, AVG(property_reviews.rating) AS average_rating FROM property_reviews JOIN properties ON property_reviews.property_id = properties.id WHERE AVG(rating) >= 4; 

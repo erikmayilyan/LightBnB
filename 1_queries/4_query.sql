@@ -1,0 +1,1 @@
+SELECT city, COUNT(reservations.id) AS total_reservations FROM properties JOIN property_reviews ON properties.id = property_reviews.property_id ORDER BY COUNT(reservations.id) DESC;
